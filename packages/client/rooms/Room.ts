@@ -7,12 +7,12 @@ import RoomMap from './map/RoomMap'
 import RoomContainer from './containers/RoomContainer'
 import RoomAssetsManager from '../assets/rooms/RoomAssetsManager'
 import IAssetsManager from '../assets/IAssetsManager'
-import Habbo from '../Habbo'
+import Sollo from '../Sollo'
 
 export default class Room extends RoomScene {
 	private readonly id: string
 
-	private game: Habbo
+	private game: Sollo
 	private roomContainer: RoomContainer
 	private loader: IAssetsManager
 
@@ -22,7 +22,7 @@ export default class Room extends RoomScene {
 
 	public constructor(
 		data: RoomData,
-		game: Habbo
+		game: Sollo
 	) {
 		super()
 

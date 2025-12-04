@@ -1,4 +1,4 @@
-import Habbo from '../Habbo'
+import Sollo from '../Sollo'
 
 export default abstract class Logger {
     private readonly consoleStyle: string
@@ -14,7 +14,7 @@ export default abstract class Logger {
     }
 
     protected debug(message: string): void {
-        if (Habbo.DEBUG) {
+        if (Sollo.DEBUG) {
             this.log(message)
         }
     }

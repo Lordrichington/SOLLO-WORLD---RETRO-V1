@@ -4,8 +4,8 @@ import RoomScene from '../RoomScene'
 import Directions from '../map/directions/Directions'
 import Stair from './Stair'
 
-import HabboContainer from '../../injectors/HabboContainer'
-import Habbo from '../../Habbo'
+import SolloContainer from '../../injectors/SolloContainer'
+import Sollo from '../../Sollo'
 
 export default class StairGenerator extends PIXI.Graphics {
 	public static readonly SURFACES = 4
@@ -19,7 +19,7 @@ export default class StairGenerator extends PIXI.Graphics {
 
 		this.room = room
 
-		const game = HabboContainer.get(Habbo)
+		const game = SolloContainer.get(Sollo)
 
 		this.renderer = game.renderer
 		this.stairThickness = this.room.data.floorThickness

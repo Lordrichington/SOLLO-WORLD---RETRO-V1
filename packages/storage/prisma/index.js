@@ -93,7 +93,7 @@ var models = [
     embedded: false
   },
   {
-    name: "Habbo",
+    name: "Sollo",
     embedded: false
   },
   {

@@ -268,7 +268,7 @@ export interface Prisma {
     before?: String;
     first?: Int;
     last?: Int;
-  }) => FragmentableArray<Habbo>;
+  }) => FragmentableArray<Sollo>;
   habboesConnection: (args?: {
     where?: HabboWhereInput;
     orderBy?: HabboOrderByInput;
@@ -3566,7 +3566,7 @@ export interface UserCreateInput {
   email?: Maybe<String>;
   password?: Maybe<String>;
   pin?: Maybe<Int>;
-  habbos?: Maybe<HabboCreateManyWithoutUserInput>;
+  sollos?: Maybe<HabboCreateManyWithoutUserInput>;
 }
 
 export interface HabboCreateManyWithoutUserInput {
@@ -3618,7 +3618,7 @@ export interface UserUpdateDataInput {
   email?: Maybe<String>;
   password?: Maybe<String>;
   pin?: Maybe<Int>;
-  habbos?: Maybe<HabboUpdateManyWithoutUserInput>;
+  sollos?: Maybe<HabboUpdateManyWithoutUserInput>;
 }
 
 export interface HabboUpdateManyWithoutUserInput {
@@ -3910,7 +3910,7 @@ export interface UserUpdateInput {
   email?: Maybe<String>;
   password?: Maybe<String>;
   pin?: Maybe<Int>;
-  habbos?: Maybe<HabboUpdateManyWithoutUserInput>;
+  sollos?: Maybe<HabboUpdateManyWithoutUserInput>;
 }
 
 export interface UserUpdateManyMutationInput {
@@ -4978,7 +4978,7 @@ export interface ChatlogNullablePromise
   createdAt: () => Promise<DateTimeOutput>;
 }
 
-export interface Habbo {
+export interface Sollo {
   id: ID_Output;
   username: String;
   motto?: String;
@@ -5003,7 +5003,7 @@ export interface Habbo {
   updatedAt?: DateTimeOutput;
 }
 
-export interface HabboPromise extends Promise<Habbo>, Fragmentable {
+export interface HabboPromise extends Promise<Sollo>, Fragmentable {
   id: () => Promise<ID_Output>;
   user: <T = UserPromise>() => T;
   username: () => Promise<String>;
@@ -5030,7 +5030,7 @@ export interface HabboPromise extends Promise<Habbo>, Fragmentable {
 }
 
 export interface HabboSubscription
-  extends Promise<AsyncIterator<Habbo>>,
+  extends Promise<AsyncIterator<Sollo>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
   user: <T = UserSubscription>() => T;
@@ -5058,7 +5058,7 @@ export interface HabboSubscription
 }
 
 export interface HabboNullablePromise
-  extends Promise<Habbo | null>,
+  extends Promise<Sollo | null>,
     Fragmentable {
   id: () => Promise<ID_Output>;
   user: <T = UserPromise>() => T;
@@ -5099,7 +5099,7 @@ export interface UserPromise extends Promise<User>, Fragmentable {
   email: () => Promise<String>;
   password: () => Promise<String>;
   pin: () => Promise<Int>;
-  habbos: <T = FragmentableArray<Habbo>>(args?: {
+  sollos: <T = FragmentableArray<Sollo>>(args?: {
     where?: HabboWhereInput;
     orderBy?: HabboOrderByInput;
     skip?: Int;
@@ -5119,7 +5119,7 @@ export interface UserSubscription
   email: () => Promise<AsyncIterator<String>>;
   password: () => Promise<AsyncIterator<String>>;
   pin: () => Promise<AsyncIterator<Int>>;
-  habbos: <T = Promise<AsyncIterator<HabboSubscription>>>(args?: {
+  sollos: <T = Promise<AsyncIterator<HabboSubscription>>>(args?: {
     where?: HabboWhereInput;
     orderBy?: HabboOrderByInput;
     skip?: Int;
@@ -5139,7 +5139,7 @@ export interface UserNullablePromise
   email: () => Promise<String>;
   password: () => Promise<String>;
   pin: () => Promise<Int>;
-  habbos: <T = FragmentableArray<Habbo>>(args?: {
+  sollos: <T = FragmentableArray<Sollo>>(args?: {
     where?: HabboWhereInput;
     orderBy?: HabboOrderByInput;
     skip?: Int;
@@ -5580,7 +5580,7 @@ export interface HabboConnectionSubscription
 }
 
 export interface HabboEdge {
-  node: Habbo;
+  node: Sollo;
   cursor: String;
 }
 
@@ -6939,7 +6939,7 @@ export interface CurrenciesPreviousValuesSubscription
 
 export interface HabboSubscriptionPayload {
   mutation: MutationType;
-  node: Habbo;
+  node: Sollo;
   updatedFields: String[];
   previousValues: HabboPreviousValues;
 }
@@ -7655,7 +7655,7 @@ export const models: Model[] = [
     embedded: false
   },
   {
-    name: "Habbo",
+    name: "Sollo",
     embedded: false
   },
   {

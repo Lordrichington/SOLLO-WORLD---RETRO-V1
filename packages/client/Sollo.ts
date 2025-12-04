@@ -10,7 +10,7 @@ import RoomScene from './rooms/RoomScene'
 import RoomData from './rooms/data/RoomData'
 
 @injectable()
-export default class Habbo {
+export default class Sollo {
 	public static readonly DEBUG = true
 
 	public application: PIXI.Application

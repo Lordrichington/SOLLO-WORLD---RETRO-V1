@@ -96,7 +96,7 @@ export default class Navigator extends React.PureComponent {
                         <NavigatorGroup title="Trading" />
                         <NavigatorGroup title="Party" />
                         <NavigatorGroup title="Chat and discussion" />
-                        <NavigatorGroup title="Habbo Games" />
+                        <NavigatorGroup title="Sollo Games" />
                     </Scrollbar>
 
 

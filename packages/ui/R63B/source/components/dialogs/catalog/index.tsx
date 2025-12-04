@@ -59,7 +59,7 @@ export default class Alert extends Component<any, AlertState> {
                     id: 1,
                     parent: -1,
                     name: 'Furni',
-                    description: `Habbo Exchange is where you can convert your Credits into a tradable currency. You can then use this
+                    description: `Sollo Exchange is where you can convert your Credits into a tradable currency. You can then use this
                         currency to trade for Furni or just show off your riches in your room.`,
                     icon: 'icon_146',
                     banner: 'exchange',
@@ -78,7 +78,7 @@ export default class Alert extends Component<any, AlertState> {
                     id: 3,
                     parent: -1,
                     name: 'Pets',
-                    description: `Pets are inhabitants of Habbo Hotel so each pet owner needs to know a bit about them. If you want to look after your pet properly, 
+                    description: `Pets are inhabitants of Sollo Hotel so each pet owner needs to know a bit about them. If you want to look after your pet properly, 
                         make sure you read the following points carefully.`,
                     icon: '8',
                     banner: 'pets',

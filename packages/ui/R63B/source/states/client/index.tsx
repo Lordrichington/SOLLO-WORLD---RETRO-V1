@@ -134,7 +134,7 @@ export default class Client extends Component<any, ClientState>
 						</div>
 
 						{/* <Poll 
-							question='Habbo or Cyclone'
+							question='Sollo or Cyclone'
 							status={false}
 						/> */}
 

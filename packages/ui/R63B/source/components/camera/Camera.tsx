@@ -72,7 +72,7 @@ export default class Camera extends Component<any, any> {
 			return(
 				<div className='cameraContainer' id='cameraContainer'>
 					<div className='camera' id='camera'>
-						<h1 className='title'>Habbo Camera</h1>
+						<h1 className='title'>Sollo Camera</h1>
 	
 						<div className='cameraActions'>
 							<button className='btn btn-r63b btn-action btn-red' onClick={this.close.bind(this)}>

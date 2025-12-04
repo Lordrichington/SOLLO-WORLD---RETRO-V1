@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
 
         entry: {
 			ui: './source/app.tsx',
-			client: '../../client/Habbo.ts'
+			client: '../../client/Sollo.ts'
 		},
 
 		resolve: {

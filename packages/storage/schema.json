@@ -1676,7 +1676,7 @@
             ],
             "type": {
               "kind": "OBJECT",
-              "name": "Habbo",
+              "name": "Sollo",
               "ofType": null
             },
             "isDeprecated": false,
@@ -1765,7 +1765,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "OBJECT",
-                  "name": "Habbo",
+                  "name": "Sollo",
                   "ofType": null
                 }
               }
@@ -12068,7 +12068,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Habbo",
+                "name": "Sollo",
                 "ofType": null
               }
             },
@@ -12123,7 +12123,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "Habbo",
+        "name": "Sollo",
         "description": null,
         "fields": [
           {
@@ -12478,7 +12478,7 @@
             "deprecationReason": null
           },
           {
-            "name": "habbos",
+            "name": "sollos",
             "description": null,
             "args": [
               {
@@ -12560,7 +12560,7 @@
                 "name": null,
                 "ofType": {
                   "kind": "OBJECT",
-                  "name": "Habbo",
+                  "name": "Sollo",
                   "ofType": null
                 }
               }
@@ -15453,7 +15453,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "Habbo",
+              "name": "Sollo",
               "ofType": null
             },
             "isDeprecated": false,
@@ -17609,7 +17609,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Habbo",
+                "name": "Sollo",
                 "ofType": null
               }
             },
@@ -17625,7 +17625,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Habbo",
+                "name": "Sollo",
                 "ofType": null
               }
             },
@@ -18386,7 +18386,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Habbo",
+                "name": "Sollo",
                 "ofType": null
               }
             },
@@ -18402,7 +18402,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Habbo",
+                "name": "Sollo",
                 "ofType": null
               }
             },
@@ -19246,7 +19246,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Habbo",
+                "name": "Sollo",
                 "ofType": null
               }
             },
@@ -25738,7 +25738,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Habbo",
+                "name": "Sollo",
                 "ofType": null
               }
             },
@@ -25780,7 +25780,7 @@
             ],
             "type": {
               "kind": "OBJECT",
-              "name": "Habbo",
+              "name": "Sollo",
               "ofType": null
             },
             "isDeprecated": false,
@@ -25879,7 +25879,7 @@
               "name": null,
               "ofType": {
                 "kind": "OBJECT",
-                "name": "Habbo",
+                "name": "Sollo",
                 "ofType": null
               }
             },
@@ -25907,7 +25907,7 @@
             ],
             "type": {
               "kind": "OBJECT",
-              "name": "Habbo",
+              "name": "Sollo",
               "ofType": null
             },
             "isDeprecated": false,
@@ -33639,7 +33639,7 @@
             "defaultValue": null
           },
           {
-            "name": "habbos",
+            "name": "sollos",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -34084,7 +34084,7 @@
             "defaultValue": null
           },
           {
-            "name": "habbos",
+            "name": "sollos",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -36971,7 +36971,7 @@
             "defaultValue": null
           },
           {
-            "name": "habbos",
+            "name": "sollos",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -40152,7 +40152,7 @@
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "Habbo",
+              "name": "Sollo",
               "ofType": null
             },
             "isDeprecated": false,

@@ -199,7 +199,7 @@ type Language @db(name: "languages")
 type Chatlog @db(name: "chatlog")
 {
     id: ID! @id
-    habbo: Habbo!
+    sollo: Sollo!
     room: Room!
     message: String
     createdAt: DateTime @createdAt 
@@ -208,8 +208,8 @@ type Chatlog @db(name: "chatlog")
 type ChatlogConsole @db(name: "chatlogs_console")
 {
     id: ID! @id
-    from: Habbo! @relation(name: "ChatlogsConsoleFromUser")
-    to: Habbo! @relation(name: "ChatlogsConsoleToUser")
+    from: Sollo! @relation(name: "ChatlogsConsoleFromUser")
+    to: Sollo! @relation(name: "ChatlogsConsoleToUser")
     message: String
     createdAt: DateTime @createdAt
 }
@@ -217,8 +217,8 @@ type ChatlogConsole @db(name: "chatlogs_console")
 type ChatlogConsoleInvitations @db(name: "chatlogs_console_invitations")
 {
     id: ID! @id
-    from: Habbo! @relation(name: "ChatlogsConsoleInvitationsFromUser")
-    to: Habbo! @relation(name: "ChatlogsConsoleInvitationsToUser")
+    from: Sollo! @relation(name: "ChatlogsConsoleInvitationsFromUser")
+    to: Sollo! @relation(name: "ChatlogsConsoleInvitationsToUser")
     message: String
     room: Room!
     createdAt: DateTime @createdAt
@@ -231,7 +231,7 @@ type Room @db(name: "rooms")
 	description: String
 	type: roomType @default(value: PUBLIC)
 	category: Int
-	owner: Habbo
+	owner: Sollo
 	map: Json
 	floorThickness: Float
 	wallThickness: Float
@@ -293,7 +293,7 @@ type News @db(name: "news")
     updatedAt: DateTime @updatedAt
 }
 
-type Habbo @db(name: "habbos")
+type Sollo @db(name: "sollos")
 {
     id: ID! @id
     user: User!
@@ -320,16 +320,16 @@ type Habbo @db(name: "habbos")
     updatedAt: DateTime @updatedAt
 }
 
-type HabboBadges @db(name: "habbos_badges") {
+type SolloBadges @db(name: "sollos_badges") {
     id: ID! @id
-    habbo: Habbo!
+    sollo: Sollo!
     badge: String!
 }
 
 # Need to create a Items Table properly
-type HabboItems @db(name: "habbos_items") {
+type SolloItems @db(name: "sollos_items") {
     id: ID! @id
-    habbo: Habbo!
+    sollo: Sollo!
     item: String
 }
 
@@ -339,7 +339,7 @@ type User @db(name: "users")
     email: String
     password: String
     pin: Int
-    habbos: [Habbo!]!
+    sollos: [Sollo!]!
     createdAt: DateTime @createdAt
     updatedAt: DateTime @updatedAt
 }

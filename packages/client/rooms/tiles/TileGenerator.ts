@@ -3,8 +3,8 @@ import * as PIXI from 'pixi.js-legacy'
 import RoomScene from '../RoomScene'
 import Tile from './Tile'
 
-import HabboContainer from '../../injectors/HabboContainer'
-import Habbo from '../../Habbo'
+import SolloContainer from '../../injectors/SolloContainer'
+import Sollo from '../../Sollo'
 
 export default class TileGenerator extends PIXI.Graphics {
 	private readonly room: RoomScene
@@ -16,7 +16,7 @@ export default class TileGenerator extends PIXI.Graphics {
 
 		this.room = room
 
-		const game = HabboContainer.get(Habbo)
+		const game = SolloContainer.get(Sollo)
 
 		this.renderer = game.renderer
 		this.floorThickness = room.data.floorThickness

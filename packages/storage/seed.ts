@@ -448,7 +448,7 @@ async function main() {
 		parent: {
 			connect: FurniturePage
 		},
-		name: 'Habbo Club',
+		name: 'Sollo Club',
 		link: 'club',
 		icon: 'icon_172',
 		order: 12,
@@ -532,7 +532,7 @@ async function main() {
 		parent: {
 			connect: FurniturePage
 		},
-		name: 'Habbo Groups',
+		name: 'Sollo Groups',
 		link: 'groups',
 		icon: 'icon_203',
 		order: 15,

@@ -12,7 +12,7 @@ import Chatbox from '../../components/chatbox'
 
 import Moderation from '../../components/dialogs/moderation'
 
-import Habbo from '../../../../../client/Habbo'
+import Sollo from '../../../../../client/Sollo'
 
 import UserInfos from '../../components/click-infos/user'
 import HabboContainer from '../../../../../client/injectors/HabboContainer';
@@ -20,7 +20,7 @@ import HabboContainer from '../../../../../client/injectors/HabboContainer';
 
 export default class Room extends Component<any, any> {
 
-	private engine: Habbo
+	private engine: Sollo
 
 	private readonly Socket: SocketIOClient.Socket
 
@@ -60,7 +60,7 @@ export default class Room extends Component<any, any> {
 	}
 
 	public componentDidMount(){
-		this.engine = HabboContainer.get<Habbo>(Habbo)
+		this.engine = HabboContainer.get<Sollo>(Sollo)
 
 		this.engine.init('game', this.props.socket)
 
@@ -101,7 +101,7 @@ export default class Room extends Component<any, any> {
 
 				{/* <Catalog /> */}
 
-				{/* <Poll question='Cyclone or Habbo' status={false} /> */}
+				{/* <Poll question='Cyclone or Sollo' status={false} /> */}
 
 				<Wallet />
 				<Toolbar isClient={true} />

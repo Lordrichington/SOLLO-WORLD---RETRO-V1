@@ -1422,7 +1422,7 @@ input CatalogPageWhereUniqueInput {
 
 type Chatlog {
   id: ID!
-  habbo: Habbo!
+  habbo: Sollo!
   room: Room!
   message: String
   createdAt: DateTime
@@ -1436,8 +1436,8 @@ type ChatlogConnection {
 
 type ChatlogConsole {
   id: ID!
-  from: Habbo!
-  to: Habbo!
+  from: Sollo!
+  to: Sollo!
   message: String
   createdAt: DateTime
 }
@@ -1462,8 +1462,8 @@ type ChatlogConsoleEdge {
 
 type ChatlogConsoleInvitations {
   id: ID!
-  from: Habbo!
-  to: Habbo!
+  from: Sollo!
+  to: Sollo!
   message: String
   room: Room!
   createdAt: DateTime
@@ -1894,7 +1894,7 @@ enum Gender {
   F
 }
 
-type Habbo {
+type Sollo {
   id: ID!
   user: User!
   username: String!
@@ -1922,7 +1922,7 @@ type Habbo {
 
 type HabboBadges {
   id: ID!
-  habbo: Habbo!
+  habbo: Sollo!
   badge: String!
 }
 
@@ -2085,13 +2085,13 @@ input HabboCreateWithoutUserInput {
 }
 
 type HabboEdge {
-  node: Habbo!
+  node: Sollo!
   cursor: String!
 }
 
 type HabboItems {
   id: ID!
-  habbo: Habbo!
+  habbo: Sollo!
   item: String
 }
 
@@ -2406,7 +2406,7 @@ input HabboScalarWhereInput {
 
 type HabboSubscriptionPayload {
   mutation: MutationType!
-  node: Habbo
+  node: Sollo
   updatedFields: [String!]
   previousValues: HabboPreviousValues
 }
@@ -2971,11 +2971,11 @@ type Mutation {
   upsertCurrencies(where: CurrenciesWhereUniqueInput!, create: CurrenciesCreateInput!, update: CurrenciesUpdateInput!): Currencies!
   deleteCurrencies(where: CurrenciesWhereUniqueInput!): Currencies
   deleteManyCurrencieses(where: CurrenciesWhereInput): BatchPayload!
-  createHabbo(data: HabboCreateInput!): Habbo!
-  updateHabbo(data: HabboUpdateInput!, where: HabboWhereUniqueInput!): Habbo
+  createHabbo(data: HabboCreateInput!): Sollo!
+  updateHabbo(data: HabboUpdateInput!, where: HabboWhereUniqueInput!): Sollo
   updateManyHabboes(data: HabboUpdateManyMutationInput!, where: HabboWhereInput): BatchPayload!
-  upsertHabbo(where: HabboWhereUniqueInput!, create: HabboCreateInput!, update: HabboUpdateInput!): Habbo!
-  deleteHabbo(where: HabboWhereUniqueInput!): Habbo
+  upsertHabbo(where: HabboWhereUniqueInput!, create: HabboCreateInput!, update: HabboUpdateInput!): Sollo!
+  deleteHabbo(where: HabboWhereUniqueInput!): Sollo
   deleteManyHabboes(where: HabboWhereInput): BatchPayload!
   createHabboBadges(data: HabboBadgesCreateInput!): HabboBadges!
   updateHabboBadges(data: HabboBadgesUpdateInput!, where: HabboBadgesWhereUniqueInput!): HabboBadges
@@ -3630,8 +3630,8 @@ type Query {
   currencies(where: CurrenciesWhereUniqueInput!): Currencies
   currencieses(where: CurrenciesWhereInput, orderBy: CurrenciesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Currencies]!
   currenciesesConnection(where: CurrenciesWhereInput, orderBy: CurrenciesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CurrenciesConnection!
-  habbo(where: HabboWhereUniqueInput!): Habbo
-  habboes(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Habbo]!
+  habbo(where: HabboWhereUniqueInput!): Sollo
+  habboes(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Sollo]!
   habboesConnection(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): HabboConnection!
   habboBadges(where: HabboBadgesWhereUniqueInput!): HabboBadges
   habboBadgeses(where: HabboBadgesWhereInput, orderBy: HabboBadgesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [HabboBadges]!
@@ -3781,7 +3781,7 @@ type Room {
   description: String
   type: roomType
   category: Int
-  owner: Habbo
+  owner: Sollo
   map: Json
   floorThickness: Float
   wallThickness: Float
@@ -4111,7 +4111,7 @@ type User {
   email: String
   password: String
   pin: Int
-  habbos(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Habbo!]
+  sollos(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Sollo!]
   createdAt: DateTime
   updatedAt: DateTime
 }
@@ -4127,7 +4127,7 @@ input UserCreateInput {
   email: String
   password: String
   pin: Int
-  habbos: HabboCreateManyWithoutUserInput
+  sollos: HabboCreateManyWithoutUserInput
 }
 
 input UserCreateOneInput {
@@ -4198,14 +4198,14 @@ input UserUpdateDataInput {
   email: String
   password: String
   pin: Int
-  habbos: HabboUpdateManyWithoutUserInput
+  sollos: HabboUpdateManyWithoutUserInput
 }
 
 input UserUpdateInput {
   email: String
   password: String
   pin: Int
-  habbos: HabboUpdateManyWithoutUserInput
+  sollos: HabboUpdateManyWithoutUserInput
 }
 
 input UserUpdateManyMutationInput {

@@ -1,7 +1,7 @@
 ![](https://images-ext-1.discordapp.net/external/r2UBimZGcz-rmHYTts7cSHrkb08ieKXJm80iHLlUQVc/https/i.imgur.com/RnTnqWt.png?width=200&height=200)
 
 # Cyclone
-Cyclone is a HTML5 version of Habbo Hotel created in NodeJS with a fully functional CMS, Housekeeping, Server, Client, Desktop App, Mobile App and lots of tools to run the perfect Habbo Retro.
+Cyclone is a HTML5 version of SOLLO created in NodeJS with a fully functional CMS, Housekeeping, Server, Client, Desktop App, Mobile App and lots of tools to run the perfect SOLLO Retro.
 
 ## Features
 

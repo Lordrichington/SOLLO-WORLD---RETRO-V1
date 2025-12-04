@@ -15,8 +15,8 @@ const Config = {
 
 let symbols = [];
 
-Download(`${Config.flashClientUrl}Habbo.swf`, path.join(__dirname, 'raw')).then(async () => {
-	const rawData = fs.readFileSync(path.join(__dirname, 'raw', `Habbo.swf`));
+Download(`${Config.flashClientUrl}Sollo.swf`, path.join(__dirname, 'raw')).then(async () => {
+	const rawData = fs.readFileSync(path.join(__dirname, 'raw', `Sollo.swf`));
  
 			// (async () => {
 				const swf = await readFromBufferP(rawData)

@@ -11,7 +11,7 @@ import StairGenerator from '../../stairs/StairGenerator'
 
 import { HeightMapPosition } from '../../map/HeightMap'
 
-import Habbo from '../../../Habbo'
+import Sollo from '../../../Sollo'
 
 export default class TilesContainer extends PIXI.Container {
 	private readonly room: RoomScene
@@ -42,7 +42,7 @@ export default class TilesContainer extends PIXI.Container {
 		this.addChild(...this.tiles)
 		this.addChild(this.hoverTile)
 
-		if (Habbo.DEBUG) {
+		if (Sollo.DEBUG) {
 			this.debugTextCoords = this.getDebugTextCoords()
 
 			this.addChild(...this.debugTextCoords)
